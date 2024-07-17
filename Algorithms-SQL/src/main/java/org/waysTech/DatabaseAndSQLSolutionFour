@@ -1,0 +1,12 @@
+Solution 4
+
+    SQL query that selects the userId and the average session duration for each user with more than one session.
+
+    SELECT
+      userId,AVG(duration) AS AverageDuration
+    FROM
+      sessions
+    GROUP BY
+      userId
+    HAVING
+      COUNT(id) > 1

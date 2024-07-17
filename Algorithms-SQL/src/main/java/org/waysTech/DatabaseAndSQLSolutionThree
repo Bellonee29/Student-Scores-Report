@@ -1,0 +1,9 @@
+SOLUTION 3
+
+    In SQL, JOIN clauses are used to combine rows from two or more tables based on a related column between them.
+
+    ## A RIGHT JOIN returns all the rows from the right table ("right side" of the join), and the matching rows from the left table.
+    If there are no matches, the result set will contain NULL values for the left side.
+
+    ## A LEFT JOIN returns all the rows from the left table ("left side" of the join), and the matching rows from the right table.
+     If there are no matches, the result set will contain NULL values for the right side.

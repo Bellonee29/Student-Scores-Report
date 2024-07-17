@@ -1,0 +1,28 @@
+SOLUTION 1
+
+SELECT MAX(salary) FROM emp WHERE salary < (SELECT MAX(salary) FROM emp);
+
+Query Description
+    1) This query effectively finds the maximum salary that is less than the overall maximum salary in the emp table.
+    2) It handles ties correctly because if there are multiple employees with the maximum salary,
+    the sub-query (SELECT MAX(salary) FROM emp) ensures that we are looking for salaries strictly less than the absolute maximum,
+    thus capturing the second highest salary even in the presence of ties.
+
+
+SELECT DISTINCT salary FROM emp ORDER BY salary DESC LIMIT 1 OFFSET 1;
+
+Query Description
+     1) This query retrieves distinct salaries in descending order and skips the first one using OFFSET 1.
+     It then selects the first row from the remaining results, which corresponds to the second largest unique salary.
+
+
+
+SELECT salary FROM (SELECT DISTINCT salary FROM emp ORDER BY salary DESC LIMIT 2) AS emp ORDER BY salary LIMIT 1;
+
+Query Description
+        1) The query (SELECT salary FROM (SELECT DISTINCT salary FROM emp ORDER BY salary DESC LIMIT 2),
+         AS emp ORDER BY salary LIMIT 1) is indeed a correct approach to finding the second highest salary,
+         considering ties. The use of DISTINCT in the inner sub-query ensures that duplicates are handled properly,
+         and the subsequent ordering ensures the correct result is obtained.
+         This query approach is valid and effective in SQL contexts where DISTINCT is necessary to handle duplicates.
+

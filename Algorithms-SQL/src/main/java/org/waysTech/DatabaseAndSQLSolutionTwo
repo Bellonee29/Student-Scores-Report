@@ -1,0 +1,19 @@
+SOLUTION 2
+
+    To determine the country where the games took place each year, Using the information from the tables provided.
+
+    Based on the information, the countries where the games took place each year are:
+
+        1896: Greece
+        1948: UK
+        2004: Greece
+        2008: China
+        2012: UK
+
+
+
+        ##  SQL Query to achieve this:
+
+        SELECT g.yr, c.country FROM games g
+        JOIN city c ON g.city = c.name;
+
