@@ -25,14 +25,6 @@ public class AppUserController {
     private final AppUserService appUserService;
     private final PasswordValidator passwordValidator;
 
-    @PostMapping(path = "/registerStudent")
-    public ResponseEntity<?> registerStudent(@RequestBody @Valid RegistrationRequest request) {
-        log.info("controller register: register user :: [{}] ::", request.getEmail());
-        passwordValidator.isValid(request);
-        GenericResponse response = appUserService.registerStudent(request);
-        return ResponseEntity.status(HttpStatus.OK).body(response);
-    }
-
     @PostMapping("create")
     public ResponseEntity<String> enterScores (@RequestBody ScoreDto scoreDto){
         appUserService.addScores(scoreDto);
@@ -51,17 +43,17 @@ public class AppUserController {
 
 
     @GetMapping("/mean/{studentRegNo}")
-    public ResponseEntity<Integer> getMeanScore(@PathVariable long studentRegNo) {
+    public ResponseEntity<Integer> getMeanScore(@PathVariable Integer studentRegNo) {
         return appUserService.getMeanScore(studentRegNo);
     }
 
     @GetMapping("/median/{studentRegNo}")
-    public ResponseEntity<Integer> getMedianScore(@PathVariable long studentRegNo) {
+    public ResponseEntity<Integer> getMedianScore(@PathVariable Integer studentRegNo) {
         return appUserService.getMedianScore(studentRegNo);
     }
 
     @GetMapping("/mode/{studentRegNo}")
-    public ResponseEntity<Integer> getModeScore(@PathVariable long studentRegNo) {
+    public ResponseEntity<Integer> getModeScore(@PathVariable Integer studentRegNo) {
         return appUserService.getModeScore(studentRegNo);
     }
 
