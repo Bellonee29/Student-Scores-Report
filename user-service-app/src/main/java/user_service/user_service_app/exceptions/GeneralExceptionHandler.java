@@ -10,7 +10,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import score_service.score_service_app.dto.reponse.GenericResponse;
+import user_service.user_service_app.dto.response.GenericResponse;
 
 import java.util.Arrays;
 

@@ -8,7 +8,7 @@ import user_service.user_service_app.dto.response.GenericResponse;
 
 import java.util.Map;
 
-@Service
+
 public interface AppUserService {
     GenericResponse registerStudent(RegistrationRequest request);
 

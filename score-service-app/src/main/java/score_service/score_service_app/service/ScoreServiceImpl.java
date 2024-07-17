@@ -3,6 +3,7 @@ package score_service.score_service_app.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
 import score_service.score_service_app.dto.reponse.GenericResponse;
 import score_service.score_service_app.dto.request.ScoreDto;
 import score_service.score_service_app.entities.Subject;
@@ -13,6 +14,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RequiredArgsConstructor
+@Service
 public class ScoreServiceImpl implements ScoreService {
 
 
@@ -33,7 +35,7 @@ public class ScoreServiceImpl implements ScoreService {
     }
 
     @Override
-    public GenericResponse<Map<String, Integer>> getSubjectScoreByStudentRegNo(long studentRegNo) {
+    public GenericResponse<Map<String, Double>> getSubjectScoreByStudentRegNo(Integer studentRegNo) {
         Optional<Subject> subjectOptional = subjectRepository.findByStudentRegNo(studentRegNo);
         if (subjectOptional == null) {
             // Handle case where subject is not found for studentRegNo
@@ -41,7 +43,7 @@ public class ScoreServiceImpl implements ScoreService {
         }
         Subject subject = subjectOptional.get();
 
-        Map<String, Integer> scoresMap = new HashMap<>();
+        Map<String, Double> scoresMap = new HashMap<>();
         scoresMap.put("English", subject.getEnglishScore());
         scoresMap.put("Mathematics", subject.getMathematicsScore());
         scoresMap.put("Physics", subject.getPhysicsScore());

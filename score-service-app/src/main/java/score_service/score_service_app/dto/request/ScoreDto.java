@@ -8,10 +8,10 @@ import lombok.*;
 @Data
 @ToString
 public class ScoreDto {
-    private int englishScore;
-    private int mathematicsScore;
-    private int physicsScore;
-    private int computerScore;
-    private int chemistryScore;
-    private int studentRegNo;
+    private Double englishScore;
+    private Double mathematicsScore;
+    private Double physicsScore;
+    private Double computerScore;
+    private Double chemistryScore;
+    private Integer studentRegNo;
 }

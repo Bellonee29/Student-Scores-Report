@@ -28,10 +28,10 @@ public class scoreController {
 
 
     @GetMapping("getSubjectScore/{studentRegNo}")
-    public ResponseEntity<GenericResponse<Map<String, Integer>>> getSubjectScoreByStudentRegNo(@PathVariable long studentRegNo) {
-        ResponseEntity<GenericResponse<Map<String, Integer>>> responseEntity;
+    public ResponseEntity<GenericResponse<Map<String, Double>>> getSubjectScoreByStudentRegNo(@PathVariable Integer studentRegNo) {
+        ResponseEntity<GenericResponse<Map<String, Double>>> responseEntity;
 
-        GenericResponse<Map<String, Integer>> response = scoreService.getSubjectScoreByStudentRegNo(studentRegNo);
+        GenericResponse<Map<String, Double>> response = scoreService.getSubjectScoreByStudentRegNo(studentRegNo);
 
         if (response.getHttpStatus() == HttpStatus.OK) {
             responseEntity = ResponseEntity.ok(response);
@@ -42,12 +42,6 @@ public class scoreController {
         return responseEntity;
     }
 
-
-    /*@GetMapping("/students/{registrationNumber}")
-    public ResponseEntity<StudentReportDTO> getStudentReport(@PathVariable int registrationNumber) {
-        StudentReportDTO studentReport = reportService.generateStudentReport(registrationNumber);
-        return ResponseEntity.ok(studentReport);
-    }*/
 
 
 

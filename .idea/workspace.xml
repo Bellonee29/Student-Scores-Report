@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41451dfc-74bb-44d9-98ad-756a83500824" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/apiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apiGateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiGateway/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apiGateway/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-service-app/src/main/java/report_service/report_service_app/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/report-service-app/src/main/java/report_service/report_service_app/controller/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-service-app/src/main/java/report_service/report_service_app/dto/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/report-service-app/src/main/java/report_service/report_service_app/dto/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-service-app/src/main/java/report_service/report_service_app/service/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/report-service-app/src/main/java/report_service/report_service_app/service/ReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-service-app/src/main/java/report_service/report_service_app/service/ReportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/report-service-app/src/main/java/report_service/report_service_app/service/ReportServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/controller/scoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/controller/scoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/dto/request/ScoreDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/dto/request/ScoreDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/entities/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/entities/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/repository/SubjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/repository/SubjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/service/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/service/ScoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/service/ScoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/score-service-app/src/main/java/score_service/score_service_app/service/ScoreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score-service-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/score-service-app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceRegistry/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serviceRegistry/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceRegistry/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serviceRegistry/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceRegistry/target/classes/service_registry/serviceRegistry/ServiceRegistryApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/serviceRegistry/target/classes/service_registry/serviceRegistry/ServiceRegistryApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/UserServiceAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/UserServiceAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/controller/AppUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/controller/AppUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/exceptions/GeneralExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/exceptions/GeneralExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/securities/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/securities/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/service/userService/userService/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/service/userService/userService/AppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/service/userService/userService/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-app/src/main/java/user_service/user_service_app/service/userService/userService/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-app/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2jN4bF7uk78lZd8A2sWrvbff2fa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/decagon/Desktop/Student-Scores-Report",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.ReportServiceAppApplication">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="scores-of-student" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="scores-of-student" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AlgorithmsSqlApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.waystech.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.waystech.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="com.waystech.algorithm.AlgorithmsSqlApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="scores-of-student" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="scores-of-student" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="apiGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="api_gateway.apiGateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReportServiceAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="report-service-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="report_service.report_service_app.ReportServiceAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreServiceAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="score-service-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="score_service.score_service_app.ScoreServiceAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="serviceRegistry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="service_registry.serviceRegistry.ServiceRegistryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user-service-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="user_service.user_service_app.UserServiceAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AlgorithmsSqlApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41451dfc-74bb-44d9-98ad-756a83500824" name="Changes" comment="" />
+      <created>1721214273667</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721214273667</updated>
+      <workItem from="1721214280307" duration="859000" />
+      <workItem from="1721217349150" duration="6196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

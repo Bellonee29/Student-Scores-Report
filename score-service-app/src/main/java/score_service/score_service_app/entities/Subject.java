@@ -21,23 +21,23 @@ public class Subject {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private int englishScore;
+    private Double englishScore;
 
-    private int mathematicsScore;
+    private Double mathematicsScore;
 
-    private int physicsScore;
+    private Double physicsScore;
 
-    private int computerScore;
+    private Double computerScore;
 
-    private int chemistryScore;
+    private Double chemistryScore;
 
-    private int mean;
+    private Double mean;
 
-    private int median;
+    private Double median;
 
-    private int mode;
+    private Double mode;
 
-    private int studentRegNo;
+    private Integer studentRegNo;
 
 
 

@@ -2,75 +2,75 @@ package report_service.report_service_app.service;
 
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 import report_service.report_service_app.dto.Subject;
 import report_service.report_service_app.feign.ReportFeignInterface;
 
 import java.util.Arrays;
-import java.util.Optional;
 
 
 @RequiredArgsConstructor
+@Service
 public class ReportServiceImpl implements ReportService{
 
 
     private ReportFeignInterface reportFeignInterface;
 
     @Override
-    public int calculateMean(long studentRegNo) {
-
+    public Double calculateMean(Integer studentRegNo) {
         Subject subject = reportFeignInterface.getSubjectScoreByStudentRegNo(studentRegNo);
         if (subject == null) {
             // Handle case where subject is not found for studentRegNo
-            return 0; // Or throw an exception or return an appropriate value
+            return 0.0;
         }
-        int[] scores = {subject.getEnglishScore(), subject.getMathematicsScore(),
+        Double[] scores = {subject.getEnglishScore(), subject.getMathematicsScore(),
                 subject.getPhysicsScore(), subject.getComputerScore(),
                 subject.getChemistryScore()};
-        int sum = Arrays.stream(scores).sum();
+        double sum = Arrays.stream(scores)
+                .mapToDouble(Double::doubleValue)
+                .sum();
         return sum / scores.length;
     }
 
     @Override
-    public int calculateMedian(int studentRegNo) {
+    public Double calculateMedian(Integer studentRegNo) {
         Subject subject = reportFeignInterface.getSubjectScoreByStudentRegNo(studentRegNo);
         if (subject == null) {
-            // Handle case where subject is not found for studentRegNo
-            return 0; // Or throw an exception or return an appropriate value
+            return 0.0;
         }
-        int[] scores = {subject.getEnglishScore(), subject.getMathematicsScore(),
+        Double[] scores = {subject.getEnglishScore(), subject.getMathematicsScore(),
                 subject.getPhysicsScore(), subject.getComputerScore(),
                 subject.getChemistryScore()};
         Arrays.sort(scores);
-        int middle = scores.length / 2;
+        double middle = (double) (scores.length / 2);
         if (scores.length % 2 == 0) {
-            return (scores[middle - 1] + scores[middle]) / 2;
+            return (scores[(int) (middle - 1)] + scores[(int) middle]) / 2;
         } else {
-            return scores[middle];
+            return scores[(int) middle];
         }
     }
 
     @Override
-    public int calculateMode(int studentRegNo) {
+    public Double calculateMode(Integer studentRegNo) {
 
         Subject subject = reportFeignInterface.getSubjectScoreByStudentRegNo(studentRegNo);
         if (subject == null) {
-            // Handle case where subject is not found for studentRegNo
-            return 0; // Or throw an exception or return an appropriate value
+            return 0.0;
         }
-        int[] scores = {subject.getEnglishScore(), subject.getMathematicsScore(),
+        Double[] scores = {subject.getEnglishScore(), subject.getMathematicsScore(),
                 subject.getPhysicsScore(), subject.getComputerScore(),
                 subject.getChemistryScore()};
         int maxCount = 0;
-        int mode = 0;
-        for (int i = 0; i < scores.length; ++i) {
+        Double mode = (double) 0;
+        for (Double score : scores) {
             int count = 0;
-            for (int j = 0; j < scores.length; ++j) {
-                if (scores[j] == scores[i])
+            for (Double aDouble : scores) {
+                if (aDouble == score)
                     ++count;
             }
             if (count > maxCount) {
                 maxCount = count;
-                mode = scores[i];
+                mode = score;
             }
         }
         return mode;

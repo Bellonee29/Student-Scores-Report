@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import user_service.user_service_app.dto.request.RegistrationRequest;
 import user_service.user_service_app.dto.request.ScoreDto;
-import user_service.user_service_app.dto.request.StudentReportDto;
 import user_service.user_service_app.dto.response.GenericResponse;
 import user_service.user_service_app.service.userService.userService.AppUserService;
 import user_service.user_service_app.utils.PasswordValidator;
@@ -52,7 +51,7 @@ public class AppUserController {
 
 
     @GetMapping("/mean/{studentRegNo}")
-    public ResponseEntity<GenericResponse<Integer>> getMeanScore(@PathVariable long studentRegNo) {
+    public ResponseEntity<Integer> getMeanScore(@PathVariable long studentRegNo) {
         return appUserService.getMeanScore(studentRegNo);
     }
 

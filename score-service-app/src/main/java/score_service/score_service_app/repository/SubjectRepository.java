@@ -7,6 +7,6 @@ import java.util.Optional;
 
 public interface SubjectRepository extends JpaRepository<Subject, Long> {
 
-    Optional<Subject> findByStudentRegNo(Long studentRegNo);
+    Optional<Subject> findByStudentRegNo(Integer studentRegNo);
 
 }

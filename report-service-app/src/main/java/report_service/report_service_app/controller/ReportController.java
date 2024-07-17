@@ -16,20 +16,20 @@ public class ReportController {
     private final ReportService reportService;
 
     @GetMapping("/mean/{studentRegNo}")
-    public ResponseEntity<Integer> getMeanScore(@PathVariable long studentRegNo) {
-        int meanScore = reportService.calculateMean(studentRegNo);
+    public ResponseEntity<Double> getMeanScore(@PathVariable Integer studentRegNo) {
+        double meanScore = reportService.calculateMean(studentRegNo);
         return ResponseEntity.ok(meanScore);
     }
 
     @GetMapping("/median/{studentRegNo}")
-    public ResponseEntity<Integer> getMedianScore(@PathVariable int studentRegNo) {
-        int medianScore = reportService.calculateMedian(studentRegNo);
+    public ResponseEntity<Double> getMedianScore(@PathVariable Integer studentRegNo) {
+        double medianScore = reportService.calculateMedian(studentRegNo);
         return ResponseEntity.ok(medianScore);
     }
 
     @GetMapping("/mode/{studentRegNo}")
-    public ResponseEntity<Integer> getModeScore(@PathVariable int studentRegNo) {
-        int modeScore = reportService.calculateMode(studentRegNo);
+    public ResponseEntity<Double> getModeScore(@PathVariable Integer studentRegNo) {
+        double modeScore = reportService.calculateMode(studentRegNo);
         return ResponseEntity.ok(modeScore);
     }
 }

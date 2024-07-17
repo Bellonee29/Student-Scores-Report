@@ -7,13 +7,7 @@ import score_service.score_service_app.entities.Subject;
 
 import java.util.Map;
 
-@Service
 public interface ScoreService {
-
-
-
     void addScores(ScoreDto scoreDTO);
-
-
-    GenericResponse<Map<String, Integer>> getSubjectScoreByStudentRegNo(long studentRegNo);
+    GenericResponse<Map<String, Double>> getSubjectScoreByStudentRegNo(Integer studentRegNo);
 }

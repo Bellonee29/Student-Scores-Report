@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 import user_service.user_service_app.dto.request.RegistrationRequest;
 import user_service.user_service_app.dto.request.ScoreDto;
 import user_service.user_service_app.dto.response.GenericResponse;
@@ -18,6 +19,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RequiredArgsConstructor
+@Service
 public class AppUserServiceImpl implements AppUserService{
 
     private final JWTService jwtService;

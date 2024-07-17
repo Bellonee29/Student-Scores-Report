@@ -1,6 +1,6 @@
 package user_service.user_service_app.securities;
 
-import com.waysTech.scores_of_students.enums.Role;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,6 +20,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import user_service.user_service_app.enums.Role;
 
 import java.util.Arrays;
 
