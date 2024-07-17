@@ -1,6 +1,7 @@
 # Student-Scores-Report
+The PROGRAMMING/ALGORITHM and DATABASE/SQL Is inside Algorithms-SQL folder and they can run separately.
 
-Overview
+# Overview
 This web application is designed to manage student scores across five subjects. 
 It includes features to input student scores, store them in a database, 
 and generate comprehensive reports displaying individual scores, mean, median, 
